@@ -1,0 +1,18 @@
+{
+  "name": "badges-lastfm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "wrangler publish",
+    "dev": "wrangler dev"
+  },
+  "keywords": [],
+  "author": "abskmj@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/wrangler": "^1.10.3",
+    "standard": "^14.3.4"
+  }
+}
