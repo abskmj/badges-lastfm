@@ -1,4 +1,4 @@
-# Markdown Badges for Lastfm
+# Markdown Badges for LastFM
 ## Last Played Song
 Displays the last played song scrobbled on [Last.fm](https://www.last.fm) for a user.
 ```
@@ -29,8 +29,16 @@ Badges are rendered using [Shields.io](https://shields.io/) service and allow cu
 ```
 ![](https://badges.lastfm.workers.dev/last-played?user=rj&label=Last%20Song)
 
-# Disclaimer
-Currently, this service is hosted on a free tier of [Cloudflare Workers](https://workers.cloudflare.com/) and limited at 100K requests per day. If you need a stable service, please consider hosting it under your account.
+# Deploy as Cloudflare Worker
+## Disclaimer
+I use this service for my profile at [github.com](https://github.com/abskmj). Currently, the service is hosted on a free tier of [Cloudflare Workers](https://workers.cloudflare.com/) and limited at 100K requests per day. If you need a stable service, please consider hosting it under your account.
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/abskmj/badges-lastfm)
+
+## LastFM API Key
+Create a secret `LASTFM_API_KEY` for the Cloudflare Worker to use the LastFM APIs.
+- Steps for getting an API key is available at [last.fm](https://www.last.fm/api/authentication).
+- Steps for creating a secret is available at [developers.cloudflare.com](https://developers.cloudflare.com/workers/reference/apis/environment-variables/#environment-variables). 
 
 # Fixes & Improvements
 Head over to the issues tab at [github.com](https://github.com/abskmj/badges-lastfm/issues) to report a bug or suggest an improvement. Feel free to contribute to the code or documentation by creating a pull request.
